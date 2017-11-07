@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
+declare var com;
+
 @Component({
     selector: "Home",
     moduleId: module.id,
@@ -11,5 +13,6 @@ export class HomeComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        console.dir(com.alibaba.sdk.android.oss);
     }
 }
